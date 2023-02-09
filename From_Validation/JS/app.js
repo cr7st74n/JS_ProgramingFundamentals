@@ -97,12 +97,20 @@
         if (Errors.length > 0 ){
             alert(Errors.join("\n"));
             return;
+        }else{
+            const displayOrder = document.querySelector("#order-summary");
+            displayOrder.innerHTML= `Homeowner Name: ${name} <br>
+            House Number: ${houseNumber} <br>
+            Street Name: ${streetName} <br>
+            City: ${city} <br>
+            State: MN <br>
+            Zip Code: ${zipcode} <br>
+            Tree Type: ${treeType} <br>`;
         }
-
         // TODO - If there are no errors, use a template string to display an order 
         // summary in the order summary paragraph.
 
-        
+       
     })
 
 
