@@ -80,6 +80,7 @@
         ValidateData(homeownerHouseNumberInput);
         ValidateData(homeownerStreetNameInput);
         ValidateData(treeTypeSelect);
+        ValidateData(CityInput);
 
         function ValidateData(data){
             if(!data.value){
